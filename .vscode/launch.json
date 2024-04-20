@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "LinkedListInsertAtPosition",
+      "request": "launch",
+      "mainClass": "LinkedListInsertAtPosition",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "InsertAtBeginLinkedList",
       "request": "launch",
       "mainClass": "InsertAtBeginLinkedList",
