@@ -1,0 +1,339 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "gift",
+      "request": "launch",
+      "mainClass": "gift",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Abcd",
+      "request": "launch",
+      "mainClass": "Abcd",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Gifts",
+      "request": "launch",
+      "mainClass": "Gifts",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "rotedTar",
+      "request": "launch",
+      "mainClass": "rotedTar",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "add_2darray",
+      "request": "launch",
+      "mainClass": "add_2darray",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "findsquare",
+      "request": "launch",
+      "mainClass": "findsquare",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "fisrtocc",
+      "request": "launch",
+      "mainClass": "fisrtocc",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "RecBinsea",
+      "request": "launch",
+      "mainClass": "RecBinsea",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "binarysS",
+      "request": "launch",
+      "mainClass": "binarysS",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Sort012",
+      "request": "launch",
+      "mainClass": "Sort012",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "plus_one",
+      "request": "launch",
+      "mainClass": "plus_one",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "manage_pos",
+      "request": "launch",
+      "mainClass": "manage_pos",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "arra_pr1",
+      "request": "launch",
+      "mainClass": "arra_pr1",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "automorphic",
+      "request": "launch",
+      "mainClass": "automorphic",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Isbn",
+      "request": "launch",
+      "mainClass": "Isbn",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "duck",
+      "request": "launch",
+      "mainClass": "duck",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "spynum",
+      "request": "launch",
+      "mainClass": "spynum",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "count_sort",
+      "request": "launch",
+      "mainClass": "count_sort",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "quick_sort",
+      "request": "launch",
+      "mainClass": "quick_sort",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Merg_Sort",
+      "request": "launch",
+      "mainClass": "Merg_Sort",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Alba_bet",
+      "request": "launch",
+      "mainClass": "Alba_bet",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "End_zero",
+      "request": "launch",
+      "mainClass": "End_zero",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Selection_Sort",
+      "request": "launch",
+      "mainClass": "Selection_Sort",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "BubbleSort",
+      "request": "launch",
+      "mainClass": "BubbleSort",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "low_cost",
+      "request": "launch",
+      "mainClass": "low_cost",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "sumsubset",
+      "request": "launch",
+      "mainClass": "sumsubset",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "String1",
+      "request": "launch",
+      "mainClass": "String1",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Linear_Search",
+      "request": "launch",
+      "mainClass": "Linear_Search",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "make_spiral",
+      "request": "launch",
+      "mainClass": "make_spiral",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Spiral_order",
+      "request": "launch",
+      "mainClass": "Spiral_order",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "pre_fix",
+      "request": "launch",
+      "mainClass": "pre_fix",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "find_second",
+      "request": "launch",
+      "mainClass": "find_second",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "uniqu_num",
+      "request": "launch",
+      "mainClass": "uniqu_num",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "lar_sml",
+      "request": "launch",
+      "mainClass": "lar_sml",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "check_sort",
+      "request": "launch",
+      "mainClass": "check_sort",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "search_ele",
+      "request": "launch",
+      "mainClass": "search_ele",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "maxarray",
+      "request": "launch",
+      "mainClass": "maxarray",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "constru",
+      "request": "launch",
+      "mainClass": "constru",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "packages",
+      "request": "launch",
+      "mainClass": "pw.skill.packages",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "callpack",
+      "request": "launch",
+      "mainClass": "callpack",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "packages",
+      "request": "launch",
+      "mainClass": "packages",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "method1",
+      "request": "launch",
+      "mainClass": "method1",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "NumberPattern",
+      "request": "launch",
+      "mainClass": "NumberPattern",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "sumseries",
+      "request": "launch",
+      "mainClass": "sumseries",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "reverse",
+      "request": "launch",
+      "mainClass": "reverse",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "d:/dsa java",
+      "program": "d:/dsa java/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardo{
+    height: 220px;
+    width: 190px;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px rgb(87, 80, 80);
+    margin: 20px;
+    border-radius: 10px;
+    position: relative; 
+    overflow: hidden;
+}
+.cardo::before {
+content: '';
+width: 150px;
+height: 180px;
+background-color: rgb(87, 80, 80);
+border-radius: 50%;
+position: absolute;
+bottom: 0;
+right: 0;
+}
