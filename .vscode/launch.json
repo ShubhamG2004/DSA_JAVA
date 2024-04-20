@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "linkedImplementation",
+      "request": "launch",
+      "mainClass": "linkedImplementation",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "loop_3",
+      "request": "launch",
+      "mainClass": "loop_3",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "linked_implementation",
+      "request": "launch",
+      "mainClass": "linked_implementation",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "linked_implenation",
+      "request": "launch",
+      "mainClass": "linked_implenation",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "gift",
       "request": "launch",
       "mainClass": "gift",
