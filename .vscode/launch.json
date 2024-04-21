@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "llnthfromend",
+      "request": "launch",
+      "mainClass": "llnthfromend",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "LinkedListInsertAtPosition",
       "request": "launch",
       "mainClass": "LinkedListInsertAtPosition",
