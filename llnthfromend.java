@@ -22,6 +22,21 @@ public class llnthfromend{
 
         return temp;
     }
+    public static Node nthfromend2(Node head, int idx){
+        Node slow=head;
+        Node fast=head;
+
+        for(int i=1;i<=idx;i++){
+            fast=fast.next;
+        }
+
+        while(fast!=null){
+            slow=slow.next;
+            fast=fast.next;
+        }
+
+        return slow;
+    }
     public static void main(String[] args) {
         Node a=new Node(100);
         Node b=new Node(20);
@@ -35,5 +50,7 @@ public class llnthfromend{
 
         Node q= nthfromend(a,2);
         System.out.println(q.data);
+        Node r= nthfromend2(a,2);
+        System.out.println(r.data);
     }
 }
