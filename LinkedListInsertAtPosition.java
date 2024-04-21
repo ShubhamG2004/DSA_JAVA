@@ -42,6 +42,13 @@ public class LinkedListInsertAtPosition{
             iap.next=temp.next;
             temp.next=iap;
         }
+        int getindex(int idx){
+            Node temp=head;
+            for(int i=1;i<=idx;i++){
+                temp=temp.next;
+            }
+            return temp.data;
+        }
         void display(){
             Node temp=head;
             while(temp!=null){
@@ -61,5 +68,6 @@ public class LinkedListInsertAtPosition{
         System.out.println();
         ll.insertAtPosition(2, 11);
         ll.display();
+        System.out.println(ll.getindex(2));
     }
 }
