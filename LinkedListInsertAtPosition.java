@@ -68,6 +68,7 @@ public class LinkedListInsertAtPosition{
         System.out.println();
         ll.insertAtPosition(2, 11);
         ll.display();
+        System.out.println();
         System.out.println(ll.getindex(2));
     }
 }
