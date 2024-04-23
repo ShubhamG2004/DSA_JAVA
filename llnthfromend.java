@@ -22,20 +22,36 @@ public class llnthfromend{
 
         return temp;
     }
-    public static void deleteNthfromend(Node head, int idx){
+    public static int size(Node head){
+        Node temp=head;
+        int size=0;
+
+        while(temp!=null){
+            size++;
+            temp=temp.next;
+        }
+        return size;
+    }
+    public static Node deleteNthfromend(Node head, int idx){
         Node slow=head;
         Node fast =head;
-
-        for(int i=0;i<=idx;i++){
+        if (idx<0 || idx>=size(head)){
+            return head;
+        }
+        for(int i=1;i<=idx;i++){
             fast=fast.next;
         }
-
+        if(fast==null){
+            head=head.next;
+            return head;
+        }
         while(fast.next!=null){
             slow=slow.next;
             fast=fast.next;
         }
 
         slow.next=slow.next.next;
+        return head;
     }
     public static Node nthfromend2(Node head, int idx){
         Node slow=head;
@@ -75,7 +91,8 @@ public class llnthfromend{
         Node r= nthfromend2(a,2);
         System.out.println(r.data);
         display(a);
-        deleteNthfromend(a,2);
+        System.out.println();
+        a= deleteNthfromend(a,9);
         display(a);
     }
 }
