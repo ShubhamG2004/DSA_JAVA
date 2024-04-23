@@ -22,6 +22,21 @@ public class llnthfromend{
 
         return temp;
     }
+    public static void deleteNthfromend(Node head, int idx){
+        Node slow=head;
+        Node fast =head;
+
+        for(int i=0;i<=idx;i++){
+            fast=fast.next;
+        }
+
+        while(fast.next!=null){
+            slow=slow.next;
+            fast=fast.next;
+        }
+
+        slow.next=slow.next.next;
+    }
     public static Node nthfromend2(Node head, int idx){
         Node slow=head;
         Node fast=head;
@@ -36,6 +51,13 @@ public class llnthfromend{
         }
 
         return slow;
+    }
+    public static void display(Node head){
+        Node temp=head;
+        while(temp!=null){
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
     }
     public static void main(String[] args) {
         Node a=new Node(100);
@@ -52,5 +74,7 @@ public class llnthfromend{
         System.out.println(q.data);
         Node r= nthfromend2(a,2);
         System.out.println(r.data);
+        deleteNthfromend(a,2);
+        display(a);
     }
 }
