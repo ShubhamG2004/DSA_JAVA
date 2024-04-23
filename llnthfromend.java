@@ -74,6 +74,7 @@ public class llnthfromend{
         System.out.println(q.data);
         Node r= nthfromend2(a,2);
         System.out.println(r.data);
+        display(a);
         deleteNthfromend(a,2);
         display(a);
     }
