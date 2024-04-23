@@ -45,7 +45,7 @@ public class llnthfromend{
             fast=fast.next;
         }
 
-        while(fast!=null){
+        while(fast.next!=null){
             slow=slow.next;
             fast=fast.next;
         }
