@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "middle_ll",
+      "request": "launch",
+      "mainClass": "middle_ll",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "llnthfromend",
       "request": "launch",
       "mainClass": "llnthfromend",
