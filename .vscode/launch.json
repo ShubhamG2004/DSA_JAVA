@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Doublyll",
+      "request": "launch",
+      "mainClass": "Doublyll",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Recur_pro1",
+      "request": "launch",
+      "mainClass": "Recur_pro1",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "middle_ll",
       "request": "launch",
       "mainClass": "middle_ll",
