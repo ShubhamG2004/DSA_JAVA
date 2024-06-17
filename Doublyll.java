@@ -22,6 +22,33 @@ class Doublyll{
         head=dummy;
         return head;
     }
+    public static Node insertAttail(Node head, int x){
+        Node temp=head;
+        while(temp.next!=null){
+            temp=temp.next;
+        }
+
+        Node d=new Node(x);
+        temp.next=d;
+        d.prev=temp;
+        temp=d;
+
+        return head;
+    }
+    public static Node insertAtIdx(Node head, int idx, int x){
+        Node s=head;
+        for(int i=1;i<idx;i++){
+            s=s.next;
+        }
+        Node r=s.next;
+        Node t=new Node(x);
+        s.next=t;
+        t.prev=s;
+        t.next=r;
+        r.prev=t;
+
+        return head;
+    }
     public static void main(String[] args) {
         Node a=new Node(9);
         Node b=new Node(10);
@@ -44,5 +71,10 @@ class Doublyll{
         display(a);
         Node newhead=insertAthead(a,30);
         display(newhead);
+        Node newhead1=insertAttail(a,60);
+        display(newhead1);
+
+        Node newhead2=insertAtIdx(a, 3,1);
+        display(newhead2);
     }
 }
