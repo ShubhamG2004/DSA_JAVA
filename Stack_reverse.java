@@ -2,6 +2,21 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class Stack_reverse {
+    public static void  InsertAtBottom(Stack<Integer>st, int x){
+        if(st.size()==0){
+            st.push(x);
+            return;
+        }
+        int top=st.pop();
+        InsertAtBottom(st, x);
+        st.push(top);
+    }
+    public static void reverse(Stack<Integer> st){
+        if(st.size()==1)return;
+        int top=st.pop();
+        reverse(st);
+        InsertAtBottom(st,top);
+    }
     public static void main(String[] args) {
         Stack<Integer> st=new Stack<>();
         Stack<Integer> rt=new Stack<>();
@@ -16,6 +31,9 @@ public class Stack_reverse {
             st.push(a);
         }
         System.out.println("st:"+st);
+        System.out.print("Reverse Stack by Recursion:");
+        reverse(st);
+        System.out.println(st);
 
         // copying reverse into rt 
         while(st.size()>0){
