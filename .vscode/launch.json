@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StackDisplay",
+      "request": "launch",
+      "mainClass": "StackDisplay",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "insertionAtStack",
       "request": "launch",
       "mainClass": "insertionAtStack",
