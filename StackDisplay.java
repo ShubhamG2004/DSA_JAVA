@@ -16,6 +16,17 @@ public class StackDisplay {
         System.out.print(top + " ");
         st.push(top);
     }
+    public static void InsertAtBot(Stack<Integer> st,int val) {
+        if (st.isEmpty()) {
+            st.push(val);
+            return;
+        }
+        int top = st.pop();
+        InsertAtBot(st,val);
+        // System.out.print(top + " ");
+        st.push(top);
+    }
+    
     public static void main(String[] args) {
          Stack<Integer> st=new Stack<>();
         Stack<Integer> rt=new Stack<>();
@@ -56,9 +67,14 @@ public class StackDisplay {
         System.out.print("Displaying the Value Reverse By using the Recursion:");
         Displayrev(st);
         
-        System.out.println(st);
+        System.out.println();
         System.out.print("Displaying the Value Reverse By using the Recursion:");
         Displayrec(st);
+
+        System.out.println(st);
+        System.out.print("Displaying the Value Reverse By using the Recursion:");
+        InsertAtBot(st,23);
+        System.out.println(st);
 
     }
 }
