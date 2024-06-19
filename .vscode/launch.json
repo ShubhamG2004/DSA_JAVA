@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "RemoveConsecutiveSub",
+      "request": "launch",
+      "mainClass": "RemoveConsecutiveSub",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Removeconsectivesub",
+      "request": "launch",
+      "mainClass": "Removeconsectivesub",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "BalancedBrackets",
       "request": "launch",
       "mainClass": "BalancedBrackets",
