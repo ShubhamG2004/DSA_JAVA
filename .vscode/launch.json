@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "infix",
+      "request": "launch",
+      "mainClass": "infix",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "RemoveConsecutiveSub",
       "request": "launch",
       "mainClass": "RemoveConsecutiveSub",
