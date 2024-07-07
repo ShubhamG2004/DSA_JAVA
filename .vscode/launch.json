@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "QueueByLL",
+      "request": "launch",
+      "mainClass": "QueueByLL",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "QueueByArray",
       "request": "launch",
       "mainClass": "QueueByArray",
