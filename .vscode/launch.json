@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ReverseKele",
+      "request": "launch",
+      "mainClass": "ReverseKele",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "deque",
+      "request": "launch",
+      "mainClass": "deque",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Dequeue",
+      "request": "launch",
+      "mainClass": "Dequeue",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "CircularQueueArray",
       "request": "launch",
       "mainClass": "CircularQueueArray",

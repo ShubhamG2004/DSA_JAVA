@@ -1,14 +1,14 @@
-class Node {
-    int data;
-    Node prev, next;
-
-    public Node(int data) {
-        this.data = data;
-        this.prev = this.next = null;
-    }
-}
-
+import java.util.*;
 class QueueDLL {
+    public class Node {
+        int data;
+        Node prev, next;
+    
+        public Node(int data) {
+            this.data = data;
+            this.prev = this.next = null;
+        }
+    }
     private Node front, rear;
 
     public QueueDLL() {
@@ -69,5 +69,10 @@ public class Dequeue {
         System.out.println("Peek: " + queue.peek()); // Peek: 2
         System.out.println("Dequeued: " + queue.dequeue()); // Dequeued: 2
         System.out.println("Is queue empty? " + queue.isEmpty()); // Is queue empty? false
+        queue.enqueue(4);
+        System.out.println("Peek: " + queue.peek()); // Peek: 3
+        System.out.println("Dequeued: " + queue.dequeue()); // Dequeued: 3
+        System.out.println("Dequeued: " + queue.dequeue()); // Dequeued: 4
+        System.out.println("Is queue empty? " + queue.isEmpty()); // Is queue empty? true
     }
 }
