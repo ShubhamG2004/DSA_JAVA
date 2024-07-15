@@ -1,5 +1,5 @@
 import java.util.*;
-
+import java.applet.*;
 public class MaxFreq {
     public static void main(String[] args) {
         int[] arr={1,4,3,1,4,5,2,3,4,2,4,5,3,1,2,3,2,1,2,1,1,1,2};
