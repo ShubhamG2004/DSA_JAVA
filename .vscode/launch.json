@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "HasheSet1",
+      "request": "launch",
+      "mainClass": "HasheSet1",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "MaxFreq",
       "request": "launch",
       "mainClass": "MaxFreq",
