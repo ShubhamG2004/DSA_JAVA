@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Backtrancking1",
+      "request": "launch",
+      "mainClass": "Backtrancking1",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Backtrancking",
+      "request": "launch",
+      "mainClass": "Backtrancking",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "HashMapPr1",
       "request": "launch",
       "mainClass": "HashMapPr1",

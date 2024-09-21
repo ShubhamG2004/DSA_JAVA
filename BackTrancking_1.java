@@ -1,4 +1,4 @@
-class Backtrancking1{
+class BackTrancking_1{
     public static int RateInMaze(int sr,int sc,int er,int ec){
         int rightways = RateInMaze(1, sc+1, er, ec);
         int downways = RateInMaze(sr+1, sc, er, ec);
