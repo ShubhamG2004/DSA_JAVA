@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Permutation_rec",
+      "request": "launch",
+      "mainClass": "Permutation_rec",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "BackTrancking_2",
+      "request": "launch",
+      "mainClass": "BackTrancking_2",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "PrintMazePath",
       "request": "launch",
       "mainClass": "PrintMazePath",
