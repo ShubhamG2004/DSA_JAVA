@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ImplementationBinaryTree",
+      "request": "launch",
+      "mainClass": "ImplementationBinaryTree",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Calculator",
+      "request": "launch",
+      "mainClass": "Calculator",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "FindSumPair",
+      "request": "launch",
+      "mainClass": "FindSumPair",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "Permutation_rec",
       "request": "launch",
       "mainClass": "Permutation_rec",

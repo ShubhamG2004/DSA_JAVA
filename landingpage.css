@@ -1,0 +1,40 @@
+.nav{
+    background-color: rgb(43, 162, 241);
+}
+.nav ul{
+    display: flex;
+    gap:20px;
+    list-style-type:none;
+    padding: 10px;
+    margin-left: 1000px;
+}
+.nav ul li{
+    border: 0.5px solid white;
+    padding: 5px 10px;
+    border-radius:5px;
+    background-color: green;
+    color: white;
+
+}
+.nav ul li:hover{
+    background-color: white;
+    border: 1px solid orange;
+    cursor: pointer;
+}
+
+.dropdown-item{
+    position: absolute;
+    display: none;
+    z-index: 1;
+    min-width: 160px;
+    background-color: #f9f9f9;
+}
+
+.dropdown:hover .dropdown-item{
+    display: block;
+    cursor: pointer;
+}
+.dropdown:hover {
+    /* display: block; */
+    cursor: pointer;
+}
