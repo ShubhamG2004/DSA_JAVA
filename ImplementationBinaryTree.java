@@ -14,10 +14,8 @@ public class ImplementationBinaryTree { // Fixed class name spelling
             return;
         }
 
-        // Print the current node
         System.out.print(root.val + " -> ");
 
-        // Print left and right child if they exist
         if (root.left != null) {
             System.out.print("L:" + root.left.val + " ");
         } else {
@@ -32,7 +30,6 @@ public class ImplementationBinaryTree { // Fixed class name spelling
 
         System.out.println();
 
-        // Recursive calls for left and right subtrees
         display(root.left);
         display(root.right);
     }
