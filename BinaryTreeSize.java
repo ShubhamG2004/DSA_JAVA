@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class BinaryTreeSize {
     public static class Node{
@@ -54,8 +55,14 @@ public class BinaryTreeSize {
     }
     public static void BFSQueue(Node root){
         Queue<Node> q= new LinkedList<>();
-        
-
+        if(root!=null)q.add(root);
+        while (q.size()>0) {
+            Node temp= q.peek();
+            if(temp.left!=null)q.add(temp.left);
+            if(temp.right!=null)q.add(temp.right);
+            System.out.print(temp.val+" ");
+            q.remove();
+        }
     }
     public static void main(String[] args) {
         Node root = new Node(8);
@@ -88,10 +95,13 @@ public class BinaryTreeSize {
         System.out.println("Product of the Tree:"+ ProductOfTree(root));
         
         int level= 1+ MaxHeight(root);
-
+        System.out.println("Value of Tree by Using the BFS:");
         for(int k=1;k<=level;k++){
             NthLevel(root, k);
             System.out.println();
         }
+
+        System.out.println("Value of Tree by Using the BFS Queue:");
+        BFSQueue(root);
     }
 }
