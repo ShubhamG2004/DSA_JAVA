@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TrappedWater",
+      "request": "launch",
+      "mainClass": "TrappedWater",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "maxInSubarray",
+      "request": "launch",
+      "mainClass": "maxInSubarray",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "SubarryPair",
       "request": "launch",
       "mainClass": "SubarryPair",
