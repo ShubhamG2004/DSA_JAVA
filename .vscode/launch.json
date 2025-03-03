@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MaxProfit",
+      "request": "launch",
+      "mainClass": "MaxProfit",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "maxWaterContainer",
+      "request": "launch",
+      "mainClass": "maxWaterContainer",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "TrappedWater",
       "request": "launch",
       "mainClass": "TrappedWater",
