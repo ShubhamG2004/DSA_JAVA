@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Countsort",
+      "request": "launch",
+      "mainClass": "Countsort",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "InsertSort",
+      "request": "launch",
+      "mainClass": "InsertSort",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "SelectionSort",
       "request": "launch",
       "mainClass": "SelectionSort",
