@@ -1,6 +1,5 @@
 import java.util.Scanner;
 public class Representation {
-
     static void SearchKey(int[][] Matrix, int Key) {
         int m = Matrix.length;
         int n = Matrix[0].length;
@@ -9,10 +8,13 @@ public class Representation {
             for (int j = 0; j < n; j++) {
                 if (Matrix[i][j] == Key) {
                     System.out.println("Key found at: (" + i + ", " + j + ")");
+                    return;
                 }
             }
         }
+        System.out.println("Key not found!");
     }
+
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         int m = 3;
@@ -36,6 +38,6 @@ public class Representation {
             System.out.println();
         }
 
-        SearchKey(Matrix, 8);
+        SearchKey(Matrix, 34);
     }
 }
