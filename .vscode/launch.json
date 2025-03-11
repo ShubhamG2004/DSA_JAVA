@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DiagonalSum",
+      "request": "launch",
+      "mainClass": "DiagonalSum",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "DiagonaSum",
       "request": "launch",
       "mainClass": "DiagonaSum",
