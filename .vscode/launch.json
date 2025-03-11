@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DiagonaSum",
+      "request": "launch",
+      "mainClass": "DiagonaSum",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "SpiralMatrix",
       "request": "launch",
       "mainClass": "SpiralMatrix",
