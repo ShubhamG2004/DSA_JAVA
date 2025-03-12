@@ -21,4 +21,3 @@ public class DiagonalSum {
         System.out.println(sum); 
     }
 }
-// 1+6+11+16 + 4+7+10+13 = 68
