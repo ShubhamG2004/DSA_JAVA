@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Transpose",
+      "request": "launch",
+      "mainClass": "Transpose",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "FindNumberOccruance",
+      "request": "launch",
+      "mainClass": "FindNumberOccruance",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "SearchInMatrix",
       "request": "launch",
       "mainClass": "SearchInMatrix",
