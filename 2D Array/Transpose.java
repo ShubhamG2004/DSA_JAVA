@@ -29,7 +29,5 @@ public class Transpose {
         printMatrix(Matrix);
         System.out.println();
         makeTranspose(Matrix);
-
-
     }
 }
