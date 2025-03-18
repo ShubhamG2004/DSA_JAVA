@@ -30,6 +30,5 @@ public class Transpose {
         System.out.println();
         makeTranspose(Matrix);
         System.out.println();
-        
     }
 }
