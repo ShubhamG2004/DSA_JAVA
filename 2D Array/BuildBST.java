@@ -35,6 +35,8 @@ public class BuildBST {
         for (int val : values) {             
             root = BuildTree(root, val);         
         }     
+
+        System.out.println();
         Inorder(root); 
     } 
 }
