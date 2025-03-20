@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CreateStr",
+      "request": "launch",
+      "mainClass": "String.CreateStr",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "BuildBST",
       "request": "launch",
       "mainClass": "BuildBST",
