@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ReverseWord",
+      "request": "launch",
+      "mainClass": "String.ReverseWord",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "CreateStr",
       "request": "launch",
       "mainClass": "String.CreateStr",
