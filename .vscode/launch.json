@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CheckAnagram",
+      "request": "launch",
+      "mainClass": "String.CheckAnagram",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "ReverseWord",
       "request": "launch",
       "mainClass": "String.ReverseWord",
