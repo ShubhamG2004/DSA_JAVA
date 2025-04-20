@@ -18,7 +18,7 @@ public class Construct {
         }
 
         TreeNode temp = root;
-        while (true) {
+        while (temp != null) {
             if (data < temp.val) {
                 if (temp.left == null) {
                     temp.left = new TreeNode(data);
