@@ -26,16 +26,13 @@ public class Construct {
                 } else {
                     temp = temp.left;
                 }
-            } else if (data > temp.val) {
+            } else{
                 if (temp.right == null) {
                     temp.right = new TreeNode(data);
                     break;
                 } else {
                     temp = temp.right;
                 }
-            } else {
-                // Duplicate value found, do not insert
-                break;
             }
         }
 
