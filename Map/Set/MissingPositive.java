@@ -9,7 +9,7 @@ public class MissingPositive {
             h.add(arr[i]);
         }
 
-        for(int i=2;i<=n+1;i=i+2){
+        for(int i=1;i<=n+1;i++){
             if(!h.contains(i)){
                 return i;
             }
@@ -19,7 +19,7 @@ public class MissingPositive {
         
     }
     public static void main(String[] args) {
-        int arr[] = {1,2,3,4};
+        int arr[] = {-1,-2,2,3,4,5,6,7,10};
         int n = arr.length;
         int miss = MissingPositiveNum(arr,n);
         System.out.println("\n"+ miss);
