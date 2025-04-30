@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MissingPositive",
+      "request": "launch",
+      "mainClass": "MissingPositive",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Solution",
+      "request": "launch",
+      "mainClass": "Solution",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "Construct",
       "request": "launch",
       "mainClass": "Construct",
