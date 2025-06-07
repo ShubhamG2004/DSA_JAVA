@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Foursum_18",
+      "request": "launch",
+      "mainClass": "Foursum_18",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "fib",
+      "request": "launch",
+      "mainClass": "fib",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "MissingPositive",
       "request": "launch",
       "mainClass": "MissingPositive",
