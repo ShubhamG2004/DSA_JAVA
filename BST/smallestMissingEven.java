@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Solution {
+public class smallestMissingEven {
 
     public int smallestMissingEven(int input1, int[] input2) {
         Set<Integer> evenSet = new HashSet<>();
