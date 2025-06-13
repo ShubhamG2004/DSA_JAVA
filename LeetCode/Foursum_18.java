@@ -35,8 +35,8 @@ public class Foursum_18 {
                         temp.add(nums[q]);
                         result.add(temp);
                         // // skip duplicates for p and q
-                        // while(p < q && nums[p] == nums[p + 1]) p++;
-                        // while(p < q && nums[q] == nums[q - 1]) q--;
+                        while(p < q && nums[p] == nums[p + 1]) p++;
+                        while(p < q && nums[q] == nums[q - 1]) q--;
                         p++;
                         q--;
                     }
@@ -47,7 +47,7 @@ public class Foursum_18 {
         return result;
     }
     public static void main(String args[]){
-        int[] nums = {1, 0, -1, 0, -2, 2};
+        int[] nums = {1, 0, -1, 0, -2, 2,-1,2,3,-1};
         int target = 0;
         ArrayList<List<Integer>> res = (ArrayList<List<Integer>>) fourSum(nums, target);
         for(List<Integer> list : res) {

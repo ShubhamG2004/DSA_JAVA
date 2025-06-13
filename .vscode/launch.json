@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "NumberOfSwaps2134",
+      "request": "launch",
+      "mainClass": "NumberOfSwaps2134",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "Foursum_18",
       "request": "launch",
       "mainClass": "Foursum_18",
