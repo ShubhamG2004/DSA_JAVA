@@ -9,7 +9,7 @@ public class SimpleGridBagLayout {
         frame.setSize(400, 300);
         
         // Set GridBagLayout
-        frame.setLayout(new GridBagLayout());
+        frame.setLayout((LayoutManager) new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
         
         // Add first button (row 0, column 0)
