@@ -17,7 +17,7 @@ public class MaxFreq {
 
         int MaxFreq=0, anskey=-1;
 
-        for(var el:freq.entrySet()){
+        for(Map.Entry<Integer, Integer> el : freq.entrySet()){
             if(el.getValue()>MaxFreq){
                 MaxFreq=el.getValue();
                 anskey=el.getKey();
