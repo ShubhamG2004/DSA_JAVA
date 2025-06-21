@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MovesToLast",
+      "request": "launch",
+      "mainClass": "MovesToLast",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "SortedArray",
       "request": "launch",
       "mainClass": "SortedArray",
