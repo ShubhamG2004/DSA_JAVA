@@ -2,7 +2,7 @@ public class RemoveDuplicate {
     
     public static void main(String[] args) {
 
-        String str = "aabbccddeeffgg";
+        String str = "aabbccddeeffggff";
         StringBuilder newStr = new StringBuilder();
         removeDuplicates(str, 0, newStr);
         System.out.println("Original String: " + str);
