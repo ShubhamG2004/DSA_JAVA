@@ -4,7 +4,7 @@ public class KeyBoardPrint {
         printKeyBoard(str, 0, "");
     }
     static String[] keyBoard = {
-        ".", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz","yz"
+        ".", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wx","yz"
     };
     static void printKeyBoard(String str, int idx, String curr) {
         if(str.length() == idx) {
