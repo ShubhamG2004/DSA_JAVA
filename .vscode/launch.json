@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MazePath",
+      "request": "launch",
+      "mainClass": "MazePath",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "printSet",
       "request": "launch",
       "mainClass": "printSet",
