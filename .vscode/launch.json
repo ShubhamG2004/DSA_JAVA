@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "printSet",
+      "request": "launch",
+      "mainClass": "printSet",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "KeyBoardPrint",
       "request": "launch",
       "mainClass": "KeyBoardPrint",
