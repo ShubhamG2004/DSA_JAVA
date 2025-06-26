@@ -1,6 +1,6 @@
 public class printNqueen {
     public static void main(String[] args) {
-        int n = 4; // Size of the chessboard
+        int n = 5; // Size of the chessboard
         char[][] board = new char[n][n]; 
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
@@ -31,23 +31,61 @@ public class printNqueen {
 
     private static boolean isSafe(char[][] board, int row, int col, int n) {
         // Check column
-        for(int i=0;i<row;i++){
-            if(board[i][col] == 'Q') {
+       for(int i=0;i<n;i++){
+            if(board[i][col] == 'Q'){
                 return false;
             }
-        }
-        // Check left diagonal
-        for(int i=row-1, j=col-1; i>=0 && j>=0; i--, j--) {
+       }
+         // check row
+       for(int i=0;i<n;i++){
+            if(board[row][i] == 'Q'){
+                return false;
+            }
+       }
+
+         // check North-East diagonal
+        int i =row, j = col;
+        while(i >= 0 && j < n) {
             if(board[i][j] == 'Q') {
                 return false;
             }
+            i--;
+            j++;
         }
-        // Check right diagonal
-        for(int i=row-1, j=col+1; i>=0 && j<n; i--, j++) {
+
+        // check South-East diagonal
+        i =row;
+        j = col;
+        while(i < n && j < n) {
             if(board[i][j] == 'Q') {
                 return false;
             }
+            i++;
+            j++;
         }
+
+        // check South-West diagonal
+        i =row;
+        j = col;
+        while(i < n && j >= 0) {
+            if(board[i][j] == 'Q') {
+                return false;
+            }
+            i++;
+            j--;
+        }
+
+        // check North-West diagonal
+        i =row;
+        j = col;
+        while(i >= 0 && j >= 0) {
+            if(board[i][j] == 'Q') {
+                return false;
+            }
+            i--;
+            j--;
+        }
+
         return true;
     }
 }
