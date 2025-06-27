@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SudokuSolver",
+      "request": "launch",
+      "mainClass": "SudokuSolver",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "printNqueen",
       "request": "launch",
       "mainClass": "printNqueen",
