@@ -7,32 +7,33 @@ public class TrappingRainWater {
         System.out.println(count);
     }
 
-    public static int trappedWater(int[] arr){
-        int n = arr.length;
-        // LeftMax arr
-        int[] leftMax= new int[n];
-        leftMax[0] = arr[0];
-        for(int i=1;i<n;i++){
-            leftMax[i] = Math.max(leftMax[i-1], arr[i]);
-        }
+    public static int trappedWater(int[] height) {
+        int n = height.length;
+        int leftMax = 0;
+        int rightMax = 0;
+        int leftPos = 0;
+        int rightPos = n-1;
+        int ans =0;
 
-        // RightMax arr
-        int[] rightMax= new int[n];
-        rightMax[n-1] = arr[n-1];
-        for(int i=n-2; i>=0; i--){
-            rightMax[i] = Math.max(rightMax[i+1], arr[i]);
-        }
-
-        // Calculate trapped water
-        int count = 0;
-        for(int i=0;i<n;i++){
-            int waterIndex = Math.min(leftMax[i], rightMax[i]) - arr[i];
-            if(waterIndex > 0){
-                count += waterIndex;
+        while(leftPos < rightPos){
+            if(height[leftPos] > leftMax){
+                leftMax = Math.max(leftMax, height[leftPos]);
+            }
+            if(height[rightPos] > rightMax){
+                rightMax  = Math.max(rightMax, height[rightPos]);
+            }
+            if(leftMax < rightMax){
+                ans  = ans + leftMax - height[leftPos];
+                leftPos++;
+            }
+            else{
+                ans = ans + rightMax - height[rightPos];
+                rightPos--; 
             }
         }
 
-        // Return the total trapped water
-        return count;
+        return ans;
     }
+
 }
+ 
