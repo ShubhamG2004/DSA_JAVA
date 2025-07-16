@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "creatGraph",
+      "request": "launch",
+      "mainClass": "graph.creatGraph",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "AppendCharToMakeSubSequnce",
       "request": "launch",
       "mainClass": "TwoPointer.AppendCharToMakeSubSequnce",
