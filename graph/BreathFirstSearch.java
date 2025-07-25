@@ -75,8 +75,26 @@ public class BreathFirstSearch {
             }
         }
     }
+    public static boolean HasPath(ArrayList<Edge>[] graph, int src,int dest, boolean[] isVisited) {
+        if(src == dest) return true;
+
+        isVisited[src] = true;
+        for(int i=0;i<graph[src].size();i++){
+            Edge e = graph[src].get(i);
+            if(!isVisited[e.dest]) {
+                if(e.dest == dest) {
+                    return true; 
+                }
+                if(HasPath(graph, e.dest, dest, isVisited)) {
+                    return true; 
+                }
+            }
+        }
+
+        return false;
+    }
     public static void main(String[] args) {
-        int v = 5; // Number of vertices
+        int v = 5; 
         ArrayList<Edge>[] graph = new ArrayList[v];
         createGraph(graph);
         System.out.println("BFS Traversal:");
@@ -85,8 +103,14 @@ public class BreathFirstSearch {
         boolean[] isVisited = new boolean[v];
         System.out.println();
         System.out.println("DFS Traversal:");
-        dfs(graph, 0, isVisited); // Start DFS from vertex 0
+        dfs(graph, 0, isVisited); 
         System.out.println();
+
+        isVisited = new boolean[v];
+        int src = 0, dest = 3;  
+        boolean pathExists = HasPath(graph, src, dest, isVisited);
+        System.out.println("Path exists from " + src + " to " + dest + ": " + pathExists);
+        isVisited = new boolean[v];
     }
 
 }
