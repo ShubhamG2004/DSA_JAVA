@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "minDifference",
+      "request": "launch",
+      "mainClass": "BinarySearch.minDifference",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "findFloorValue",
+      "request": "launch",
+      "mainClass": "BinarySearch.findFloorValue",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "countTotalOcuurence",
+      "request": "launch",
+      "mainClass": "BinarySearch.countTotalOcuurence",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "firstandlastOccurrence",
+      "request": "launch",
+      "mainClass": "BinarySearch.firstandlastOccurrence",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "missingOneNumber",
       "request": "launch",
       "mainClass": "missingOneNumber",
