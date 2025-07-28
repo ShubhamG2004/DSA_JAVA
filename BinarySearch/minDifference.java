@@ -16,7 +16,7 @@ public class minDifference{
         while(left <= right){
             int mid = left + (right-left)/2;
             if(arr[mid] == target){
-                ans = target;
+                ans = arr[mid];
                 break;
             }
             else if(arr[mid] < target){

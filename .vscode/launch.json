@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "searchInInfiniteArray",
+      "request": "launch",
+      "mainClass": "BinarySearch.searchInInfiniteArray",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "minDifference",
       "request": "launch",
       "mainClass": "BinarySearch.minDifference",
