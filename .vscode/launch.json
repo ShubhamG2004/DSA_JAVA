@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "searchInroutatedArray",
+      "request": "launch",
+      "mainClass": "BinarySearch.searchInroutatedArray",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "MinimumSwaptoMakegroup",
+      "request": "launch",
+      "mainClass": "MinimumSwaptoMakegroup",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "searchInInfiniteArray",
       "request": "launch",
       "mainClass": "BinarySearch.searchInInfiniteArray",
