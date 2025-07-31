@@ -1,9 +1,9 @@
 package BinarySearch;
 
-public class searchInroutatedArray {
+public class searchInRotetedArray2 {
     public static void main(String[] args) {
-        int arr[] = {7,8,9,10,12,14,18,2,3,5};
-        int target = serchTarget(arr, 7);
+        int arr[] = {7,8,9,10,12,12,14,18,2,3,5,7};
+        int target = serchTarget(arr, 12);
         System.out.println();
         System.out.println("Ans: " + target);
     }
@@ -16,6 +16,11 @@ public class searchInroutatedArray {
             int mid = left + (right - left)/2;
             if(arr[mid] == target){
                 return mid;
+            }
+
+            if(arr[mid] == arr[left] && arr[mid] == arr[right]){
+                left ++;
+                right--;
             }
 
             // Step 2: Search In the left if Sorted
