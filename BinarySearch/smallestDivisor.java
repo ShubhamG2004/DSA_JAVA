@@ -1,3 +1,5 @@
+package BinarySearch;
+
 public class smallestDivisor {
     public static void main(String[] args) {
         int[] nums = {1, 2, 5, 9};
