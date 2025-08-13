@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "primeNumberInRange",
+      "request": "launch",
+      "mainClass": "primeNumberInRange",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "CorrectSeason",
       "request": "launch",
       "mainClass": "CorrectSeason",
