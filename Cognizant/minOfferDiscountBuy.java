@@ -5,7 +5,7 @@ public class minOfferDiscountBuy {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        sc.nextLine(); // consume leftover newline
+        sc.nextLine(); 
 
         String[] items = new String[n];
         double[] discounts = new double[n];
