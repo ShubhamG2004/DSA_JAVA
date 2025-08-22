@@ -3,6 +3,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "FelllisFunction",
+      "request": "launch",
+      "mainClass": "Cognizant2.FelllisFunction",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "MaxProductPair",
+      "request": "launch",
+      "mainClass": "Cognizant2.MaxProductPair",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "NonPrimeAddition",
+      "request": "launch",
+      "mainClass": "Cognizant2.NonPrimeAddition",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "CountCharacters",
+      "request": "launch",
+      "mainClass": "Cognizant2.CountCharacters",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "VirusUserID",
+      "request": "launch",
+      "mainClass": "Cognizant2.VirusUserID",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "NthLargest",
       "request": "launch",
       "mainClass": "Cognizant2.NthLargest",
