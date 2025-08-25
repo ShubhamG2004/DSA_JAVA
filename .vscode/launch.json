@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "InsertAtPosition",
+      "request": "launch",
+      "mainClass": "Cognizant2.InsertAtPosition",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "NonRepeatingElements",
+      "request": "launch",
+      "mainClass": "Cognizant2.NonRepeatingElements",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "RepeatingElements",
+      "request": "launch",
+      "mainClass": "Cognizant2.RepeatingElements",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "FrequencyCounter",
       "request": "launch",
       "mainClass": "Cognizant2.FrequencyCounter",
