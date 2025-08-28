@@ -1,3 +1,5 @@
+package Cognizant2;
+
 import java.util.Scanner;
 
 public class ReverseStringQues{
