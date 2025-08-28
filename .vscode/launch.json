@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "RemoveSpaces",
+      "request": "launch",
+      "mainClass": "Cognizant2.RemoveSpaces",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "RemoveVowelsManual",
+      "request": "launch",
+      "mainClass": "Cognizant2.RemoveVowelsManual",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "RemoveVowels",
+      "request": "launch",
+      "mainClass": "Cognizant2.RemoveVowels",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "LargestWordInString",
       "request": "launch",
       "mainClass": "Cognizant2.LargestWordInString",
