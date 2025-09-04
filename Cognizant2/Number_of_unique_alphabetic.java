@@ -27,7 +27,7 @@ public class Number_of_unique_alphabetic {
 
     public static void main(String[] args) {
         Number_of_unique_alphabetic obj = new Number_of_unique_alphabetic();
-        System.out.println(obj.countMappings("226"));   // 5
-        System.out.println(obj.countMappings("11292")); // 7
+        System.out.println(obj.countMappings("226"));   
+        System.out.println(obj.countMappings("11292"));
     }
 }
