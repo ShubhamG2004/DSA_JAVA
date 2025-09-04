@@ -21,7 +21,7 @@ public class StringExpander {
             }
         }
 
-        return (result.length() > 0) ? result.toString() : " ";
+        return (result.length() > 0) ? result.toString() : "";
     }
 
     public static void main(String[] args) {
