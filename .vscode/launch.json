@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Number_of_unique_alphabetic",
+      "request": "launch",
+      "mainClass": "Number_of_unique_alphabetic",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "FairSplitCounter",
       "request": "launch",
       "mainClass": "FairSplitCounter",
