@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SequenceGenerator",
+      "request": "launch",
+      "mainClass": "SequenceGenerator",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Sum_sequenceSum",
+      "request": "launch",
+      "mainClass": "Sum_sequenceSum",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "MostFrequentPairInSentence",
       "request": "launch",
       "mainClass": "MostFrequentPairInSentence",
