@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "GetMaxFreqFreq",
+      "request": "launch",
+      "mainClass": "Cognizant3.GetMaxFreqFreq",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "SequenceGenerator",
       "request": "launch",
       "mainClass": "SequenceGenerator",
