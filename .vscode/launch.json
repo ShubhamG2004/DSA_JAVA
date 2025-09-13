@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "FindAsciiInString",
+      "request": "launch",
+      "mainClass": "Cognizant3.FindAsciiInString",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "SurroundedDigits",
+      "request": "launch",
+      "mainClass": "Cognizant3.SurroundedDigits",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "GetMaxFreqFreq",
       "request": "launch",
       "mainClass": "Cognizant3.GetMaxFreqFreq",
