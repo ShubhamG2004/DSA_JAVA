@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Implementation",
+      "request": "launch",
+      "mainClass": "Implementation",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Car",
+      "request": "launch",
+      "mainClass": "OOP.Inheritance.Car",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "Method_Overloading",
       "request": "launch",
       "mainClass": "OOP.PolyMorphism.Method_Overloading",
