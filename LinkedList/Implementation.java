@@ -39,32 +39,24 @@ public class Implementation {
     }
     public static class LinkedList{
         Node head = null;
-        Node temp = null;
+        Node tail = null;
 
-        void insertAtEnd(int val)
+        void insertAtEnd(int val){
+            Node temp = new Node(val);
+            if(head == null){
+                head = temp;
+                tail = temp;
+            }
+            else{
+                tail.next = temp;
+                tail = temp;
+            }
+        }
     }
     public static void main(String[] args) {
-        Node a = new Node(12);
-        Node b = new Node(10);
-        Node c = new Node(9);
-        Node d = new Node(4);
-        Node e = new Node(6);
+        LinkedList ll = new LinkedList();
+        ll.insertAtEnd(10);
 
-        a.next = b;
-        b.next = c;
-        c.next = d;
-        d.next = e;
-
-        displayLL(a);
-        System.out.println("Recursive");
-        displayLL(a);
-
-        int lenLl = listLength(a);
-        System.out.println();
-        System.out.println("Length of List:: "+ lenLl); 
-
-        System.out.println();
-        int lenL = recLength(a);
-        System.out.println("Length of List Reverse:: "+ lenL); 
+        
     }
 }
