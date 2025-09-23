@@ -37,6 +37,12 @@ public class Implementation {
         System.out.println(temp.data);
         recDisplayLL(temp.next);
     }
+    public static class LinkedList{
+        Node head = null;
+        Node temp = null;
+
+        void insertAtEnd(int val)
+    }
     public static void main(String[] args) {
         Node a = new Node(12);
         Node b = new Node(10);
