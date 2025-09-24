@@ -37,26 +37,28 @@ public class Implementation {
         System.out.println(temp.data);
         recDisplayLL(temp.next);
     }
-    public static class LinkedList{
-        Node head = null;
-        Node tail = null;
-
-        void insertAtEnd(int val){
-            Node temp = new Node(val);
-            if(head == null){
-                head = temp;
-                tail = temp;
-            }
-            else{
-                tail.next = temp;
-                tail = temp;
-            }
-        }
-    }
     public static void main(String[] args) {
-        LinkedList ll = new LinkedList();
-        ll.insertAtEnd(10);
+        Node a = new Node(12);
+        Node b = new Node(10);
+        Node c = new Node(9);
+        Node d = new Node(4);
+        Node e = new Node(6);
 
-        
+        a.next = b;
+        b.next = c;
+        c.next = d;
+        d.next = e;
+
+        displayLL(a);
+        System.out.println("Recursive");
+        displayLL(a);
+
+        int lenLl = listLength(a);
+        System.out.println();
+        System.out.println("Length of List:: "+ lenLl); 
+
+        System.out.println();
+        int lenL = recLength(a);
+        System.out.println("Length of List Reverse:: "+ lenL); 
     }
 }
