@@ -49,30 +49,25 @@ public class NthNodeFromLast {
         return slow;
     }
     static Node deleteNthNode(Node head, int pos){
-        Node slow = head;
-        Node fast = head;
-        if(head == null)return head;
-        int i=0;
-        while( i <= pos){
-            if(fast == null) return head;
+        if (head == null || pos <= 0) return head;
+        Node dummy = new Node(0);
+        dummy.next = head;
+        Node slow = dummy;
+        Node fast = dummy;
+        int i = 0;
+        while (i < pos) {
+            if (fast.next == null) return head;
+            fast = fast.next;
+            i++;
+        }
+
+        while (fast.next != null) {
+            slow = slow.next;
             fast = fast.next;
         }
 
-        while(fast != null){
-            slow =slow.next;
-            fast = fast.next;
-        }
-
-        if(slow.next == null){
-            return head;
-        }
-        else if(slow.next.next == null){
-            slow.next = null;
-        }
-        else {
-            slow.next = slow.next.next;
-        }
-        return head;
+        slow.next = slow.next.next;
+        return dummy.next;
     }
     public static void main(String[] args) {
         Node a = new Node(12);
