@@ -1,6 +1,7 @@
 package graph;
-
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class DfsSearch {
     class Pair {
@@ -17,6 +18,7 @@ public class DfsSearch {
       }
    }
 
+   /* DFS Search */
     public ArrayList<Integer> dfs(ArrayList<ArrayList<Integer>> adj) {
         int n = adj.size();
         boolean[] visited = new boolean[n];
@@ -42,6 +44,38 @@ public class DfsSearch {
         }
     }
 
+    /* BFS Search */
+    public ArrayList<Integer> bfs(ArrayList<ArrayList<Integer>> adj) {
+        int n = adj.size();
+        boolean[] visited = new boolean[n];
+        ArrayList<Integer> res = new ArrayList<>();
+
+        for (int i = 0; i < n; i++) {
+            if (!visited[i]) {
+                bfsOfGraph(i, visited, res, adj);
+            }
+        }
+
+        return res;
+    }
+
+    public void bfsOfGraph(int startNode, boolean[] visited, ArrayList<Integer> res, ArrayList<ArrayList<Integer>> adj) {
+        Queue<Integer> queue = new LinkedList<>();
+        visited[startNode] = true;
+        queue.offer(startNode);
+
+        while (!queue.isEmpty()) {
+            int node = queue.poll();
+            res.add(node);
+
+            for (int neighbor : adj.get(node)) {
+                if (!visited[neighbor]) {
+                    queue.offer(neighbor);
+                    visited[neighbor] = true;
+                }
+            }
+        }
+    }
     public static void main(String[] args) {
         // edges with weights: {u, v, weight}
         int edges[][] = {
@@ -65,10 +99,12 @@ public class DfsSearch {
         int[][] unweightedEdges = {
             {0, 2},
             {0, 1},
-            {1, 3}
+            {1, 3},
+            {2,4},
         };
 
-        Graph unweightedGraph = new Graph(nodes);
+        int unweightedNodes = 5;
+        Graph unweightedGraph = new Graph(unweightedNodes);
         unweightedGraph.addEdgesInList(unweightedEdges, false);
 
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
@@ -79,5 +115,8 @@ public class DfsSearch {
         DfsSearch search = new DfsSearch();
         ArrayList<Integer> dfsOrder = search.dfs(adj);
         System.out.println("DFS Traversal: " + dfsOrder);
+
+        ArrayList<Integer> bfsOrder = search.bfs(adj);
+        System.out.println("BFS Traversal: " + bfsOrder);
     }
 }
