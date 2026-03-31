@@ -1,6 +1,5 @@
 package round1;
 
-package round1;
 
 public class SecondOptimized {
 
