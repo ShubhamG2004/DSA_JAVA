@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "AncestorsofNodes",
+      "request": "launch",
+      "mainClass": "graph.DAG.AncestorsofNodes",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Second",
+      "request": "launch",
+      "mainClass": "round1.Second",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "PrOne",
       "request": "launch",
       "mainClass": "round2.PrOne",
