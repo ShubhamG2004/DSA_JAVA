@@ -1,3 +1,5 @@
+package BinarySearch;
+
 public class binarysS {
     static boolean binarySearch(int[] a, int st, int end, int tar){
         if(st>end){
