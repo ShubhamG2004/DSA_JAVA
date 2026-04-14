@@ -1,3 +1,5 @@
+package graph;
+
 public class findJudgeProblem {
 	public static void main(String[] args) {
 		int n = 3;
