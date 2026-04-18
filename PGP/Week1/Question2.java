@@ -14,6 +14,15 @@ public class Question2 {
         return isPrime;
     }
     public static void main(String[] args) {
-        
+        int[] testInputs = {1, 2, 3, 4, 5, 9, 11, 15, 17, 19};
+        boolean[] expected = {false, true, true, false, true, false, true, false, true, true};
+
+        for (int i = 0; i < testInputs.length; i++) {
+            boolean actual = isPrime(testInputs[i]);
+            System.out.println(
+                "isPrime(" + testInputs[i] + ") = " + actual +
+                " | expected: " + expected[i]
+            );
+        }
     }
 }
