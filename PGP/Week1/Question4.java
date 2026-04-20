@@ -25,3 +25,16 @@ public class Question4 {
         }
     }
 }
+
+
+
+
+
+/*
+Approach:
+Compute the sum of cubes of digits and compare it with the original number.
+
+Explanation:
+An Armstrong number (for 3-digit logic here) is equal to the sum of cube of its digits.
+The method builds this sum and returns true only when sum == original.
+*/

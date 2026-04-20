@@ -57,3 +57,16 @@ class Solution {
         return s.substring(i);
     }
 }
+
+
+
+
+
+/*
+Approach:
+Simulate grade-school multiplication using an integer array to hold digit-wise products.
+
+Explanation:
+Handle sign and leading zeros, multiply each pair of digits from right to left,
+store carry and remainder in result array, then build the final string.
+*/

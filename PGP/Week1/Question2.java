@@ -26,3 +26,16 @@ public class Question2 {
         }
     }
 }
+
+
+
+
+
+/*
+Approach:
+Handle edge cases, then try dividing n by values from 2 up to n/2.
+
+Explanation:
+If any divisor exactly divides n, the number is not prime.
+If no divisor is found, the method returns true indicating n is prime.
+*/

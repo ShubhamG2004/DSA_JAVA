@@ -27,3 +27,16 @@ public class Question3 {
         }
     }
 }
+
+
+
+
+
+/*
+Approach:
+Traverse each digit of n and check whether it divides the original number.
+
+Explanation:
+Extract digits using modulo and division, skip digit 0, and increment count only when
+original % digit == 0. Return the total count at the end.
+*/

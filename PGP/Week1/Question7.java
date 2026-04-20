@@ -12,3 +12,16 @@ class Solution {
         return count;
     }
 }
+
+
+
+
+
+/*
+Approach:
+Iterate from 1 to min(a, b) and count numbers that divide both inputs.
+
+Explanation:
+If i is a common divisor of a and b, both a % i and b % i are zero.
+The loop counts all such i values and returns the total common factor count.
+*/

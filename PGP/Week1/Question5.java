@@ -33,3 +33,16 @@ public class Question5 {
         }
     }
 }
+
+
+
+
+
+/*
+Approach:
+Remove factor 2 first, then test odd factors up to sqrt(n), repeatedly dividing when matched.
+
+Explanation:
+Every time a prime factor divides n, store it in maxPrime and reduce n.
+After the loop, if n > 1, that remaining n itself is the largest prime factor.
+*/
