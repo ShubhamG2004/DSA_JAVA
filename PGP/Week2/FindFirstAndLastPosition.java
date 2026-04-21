@@ -1,0 +1,63 @@
+package PGP.Week2;
+
+import java.util.Arrays;
+
+class FindFirstAndLastPosition {
+
+    // LeetCode 34: Find First and Last Position of Element in Sorted Array
+    public static int[] searchRange(int[] nums, int target) {
+        int first = findBound(nums, target, true);
+        if (first == -1) {
+            return new int[] { -1, -1 };
+        }
+        int last = findBound(nums, target, false);
+        return new int[] { first, last };
+    }
+
+    // Binary search for first or last occurrence based on the flag.
+    private static int findBound(int[] nums, int target, boolean findFirst) {
+        int left = 0;
+        int right = nums.length - 1;
+        int ans = -1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            if (nums[mid] == target) {
+                ans = mid;
+                if (findFirst) {
+                    right = mid - 1;
+                } else {
+                    left = mid + 1;
+                }
+            } else if (nums[mid] < target) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+
+        return ans;
+    }
+
+    private static void runTest(int[] nums, int target, int[] expected) {
+        int[] result = searchRange(nums, target);
+        System.out.println("nums=" + Arrays.toString(nums)
+                + ", target=" + target
+                + " -> result=" + Arrays.toString(result)
+                + ", expected=" + Arrays.toString(expected)
+                + (Arrays.equals(result, expected) ? " [PASS]" : " [FAIL]"));
+    }
+
+    public static void main(String[] args) {
+        // Given examples
+        runTest(new int[] { 5, 7, 7, 8, 8, 10 }, 8, new int[] { 3, 4 });
+        runTest(new int[] { 5, 7, 7, 8, 8, 10 }, 6, new int[] { -1, -1 });
+        runTest(new int[] {}, 0, new int[] { -1, -1 });
+
+        // Additional edge cases
+        runTest(new int[] { 2, 2, 2, 2 }, 2, new int[] { 0, 3 });
+        runTest(new int[] { 1 }, 1, new int[] { 0, 0 });
+        runTest(new int[] { 1 }, 0, new int[] { -1, -1 });
+    }
+}
