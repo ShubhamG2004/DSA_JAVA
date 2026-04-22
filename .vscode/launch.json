@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "FindPeakElement",
+      "request": "launch",
+      "mainClass": "PGP.Week2.FindPeakElement",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "FindMinimumInRotatedSortedArray",
       "request": "launch",
       "mainClass": "PGP.Week2.FindMinimumInRotatedSortedArray",
