@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Question13",
+      "request": "launch",
+      "mainClass": "PGP.Week2.Question13",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Question11",
+      "request": "launch",
+      "mainClass": "PGP.Week2.Question11",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Question12_AggressiveCows",
+      "request": "launch",
+      "mainClass": "PGP.Week2.Question12_AggressiveCows",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Question10_KthSmallestInSortedMatrix",
+      "request": "launch",
+      "mainClass": "PGP.Week2.Question10_KthSmallestInSortedMatrix",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "MedianInTwoSortedArray",
       "request": "launch",
       "mainClass": "PGP.Week2.MedianInTwoSortedArray",

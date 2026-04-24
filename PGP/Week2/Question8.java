@@ -2,7 +2,7 @@ package PGP.Week2;
 
 import java.util.Arrays;
 
-public class Question8_SingleNonDuplicate {
+public class Question8 {
     static class Solution {
         public int singleNonDuplicate(int[] nums) {
             int left = 0;

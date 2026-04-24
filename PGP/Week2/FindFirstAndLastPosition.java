@@ -1,7 +1,5 @@
 package PGP.Week2;
 
-import java.util.Arrays;
-
 class FindFirstAndLastPosition {
 
     // LeetCode 34: Find First and Last Position of Element in Sorted Array
@@ -40,24 +38,4 @@ class FindFirstAndLastPosition {
         return ans;
     }
 
-    private static void runTest(int[] nums, int target, int[] expected) {
-        int[] result = searchRange(nums, target);
-        System.out.println("nums=" + Arrays.toString(nums)
-                + ", target=" + target
-                + " -> result=" + Arrays.toString(result)
-                + ", expected=" + Arrays.toString(expected)
-                + (Arrays.equals(result, expected) ? " [PASS]" : " [FAIL]"));
-    }
-
-    public static void main(String[] args) {
-        // Given examples
-        runTest(new int[] { 5, 7, 7, 8, 8, 10 }, 8, new int[] { 3, 4 });
-        runTest(new int[] { 5, 7, 7, 8, 8, 10 }, 6, new int[] { -1, -1 });
-        runTest(new int[] {}, 0, new int[] { -1, -1 });
-
-        // Additional edge cases
-        runTest(new int[] { 2, 2, 2, 2 }, 2, new int[] { 0, 3 });
-        runTest(new int[] { 1 }, 1, new int[] { 0, 0 });
-        runTest(new int[] { 1 }, 0, new int[] { -1, -1 });
-    }
 }

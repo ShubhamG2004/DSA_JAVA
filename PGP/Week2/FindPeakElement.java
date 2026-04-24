@@ -1,7 +1,5 @@
 package PGP.Week2;
 
-import java.util.Arrays;
-
 public class FindPeakElement {
     static class Solution {
         public int findPeakElement(int[] nums) {
@@ -47,29 +45,4 @@ public class FindPeakElement {
         }
     }
 
-    private static void runTest(Solution solver, int[] nums, int expected) {
-        int result = solver.findPeakElement(nums);
-        int peakValue = nums[result];
-        boolean passed = result == expected;
-
-        System.out.println("nums=" + Arrays.toString(nums)
-                + " -> index=" + result
-                + ", value=" + peakValue
-                + ", expectedIndex=" + expected
-                + (passed ? " [PASS]" : " [FAIL]"));
-    }
-
-    public static void main(String[] args) {
-        Solution solver = new Solution();
-
-        // LeetCode-style sample tests
-        runTest(solver, new int[] { 1, 2, 3, 1 }, 2);
-        runTest(solver, new int[] { 1, 2, 1, 3, 5, 6, 4 }, 5);
-
-        // Additional edge cases
-        runTest(solver, new int[] { 1 }, 0);
-        runTest(solver, new int[] { 2, 1 }, 0);
-        runTest(solver, new int[] { 1, 2 }, 1);
-        runTest(solver, new int[] { 1, 3, 2 }, 1);
-    }
 }
