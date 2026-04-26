@@ -1,53 +1,57 @@
 package PGP.Week2;
 
 public class Question16 {
+    static int  count = 0;
 
     static int inversionCount(int[] arr) {
-        return mergeSort(arr, 0, arr.length - 1);
-    }
-
-    static int mergeSort(int[] arr, int left, int right) {
-        int count = 0;
-
-        if (left < right) {
-            int mid = left + (right - left) / 2;
-
-            count += mergeSort(arr, left, mid);
-            count += mergeSort(arr, mid + 1, right);
-            count += merge(arr, left, mid, right);
-        }
-
+        count = 0;
+        mergeSort(arr, 0, arr.length - 1);
         return count;
     }
 
-    static int merge(int[] arr, int left, int mid, int right) {
-        int i = left, j = mid + 1, k = 0;
-        int count = 0;
+    static void  mergeSort(int[] arr, int left, int right) {
+        if( left >= right) return;
+        int mid = left + (right - left) / 2;
 
-        int[] temp = new int[right - left + 1];
+        mergeSort(arr, left, mid);
+        mergeSort(arr, mid + 1, right);
+        merge(arr, left, mid, right);
+    }
 
-        while (i <= mid && j <= right) {
-            if (arr[i] <= arr[j]) {
-                temp[k++] = arr[i++];
-            } else {
-                temp[k++] = arr[j++];
-                count += (mid - i + 1);
+    static void merge(int[] arr, int l, int mid, int r) {
+
+        int n1 = mid - l + 1;
+        int n2 = r - mid;
+
+        int[] left = new int[n1];
+        int[] right = new int[n2];
+
+        int i, j, k;
+
+        for (i = 0; i < n1; i++)
+            left[i] = arr[l + i];
+
+        for (j = 0; j < n2; j++)
+            right[j] = arr[mid + 1 + j];
+
+        i = 0;
+        j = 0;
+        k = l;
+
+        while (i < n1 && j < n2) {
+            if (left[i] <= right[j])
+                arr[k++] = left[i++];
+            else{
+                arr[k++] = right[j++];
+                count += (n1 - i);
             }
         }
 
-        while (i <= mid) {
-            temp[k++] = arr[i++];
-        }
+        while (i < n1)
+            arr[k++] = left[i++];
 
-        while (j <= right) {
-            temp[k++] = arr[j++];
-        }
-
-        for (i = left, k = 0; i <= right; i++, k++) {
-            arr[i] = temp[k];
-        }
-
-        return count;
+        while (j < n2)
+            arr[k++] = right[j++];
     }
 
     private static void runTest(int[] arr, int expected) {
