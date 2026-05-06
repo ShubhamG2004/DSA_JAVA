@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Question11",
+      "request": "launch",
+      "mainClass": "PGP.Week3.Question11",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Question9",
+      "request": "launch",
+      "mainClass": "PGP.Week3.Question9",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "Question21",
       "request": "launch",
       "mainClass": "PGP.Week2.Question21",
