@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Question14",
+      "request": "launch",
+      "mainClass": "PGP.Week3.Question14",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Question13",
+      "request": "launch",
+      "mainClass": "PGP.Week3.Question13",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "Question12",
+      "request": "launch",
+      "mainClass": "PGP.Week3.Question12",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "Question11",
       "request": "launch",
       "mainClass": "PGP.Week3.Question11",
