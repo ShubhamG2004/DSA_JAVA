@@ -1,6 +1,7 @@
 package PGP.Week3;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Question18 {
     public List<Integer> findDuplicates(int[] nums) {
@@ -17,5 +18,11 @@ public class Question18 {
             }
         }
         return ans;
+    }
+
+    public static void main(String[] args) {
+        Question18 q18 = new Question18();
+        int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
+        System.out.println("Duplicates: " + q18.findDuplicates(nums));
     }
 }
