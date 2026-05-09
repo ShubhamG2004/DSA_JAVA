@@ -33,5 +33,22 @@ public class Question16 {
 
         return true;
     }
+    public static void main(String[] args) {
+        Question16 q = new Question16();
+        String[][] tests = {
+            {"ab","eidbaooo"},   // expected: true
+            {"ab","eidboaoo"},   // expected: false
+            {"adc","dcda"},      // expected: true
+            {"a","ab"},          // expected: true
+            {"xyz","afdgzyxksldfm"} // expected: true
+        };
+
+        for(String[] t : tests) {
+            String s1 = t[0];
+            String s2 = t[1];
+            boolean res = q.checkInclusion(s1, s2);
+            System.out.printf("s1=\"%s\", s2=\"%s\" -> %b%n", s1, s2, res);
+        }
+    }
 }
 
