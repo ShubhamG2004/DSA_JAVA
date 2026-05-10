@@ -1,27 +1,28 @@
 package PGP.Week3;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Question19 {
-    public int maxProduct(int[] nums) {
-        int prefix = 1;
-        int suffix = 1;
+    public List<Integer> findDuplicates(int[] nums) {
+        List<Integer> ans = new ArrayList<>();
 
-        int maxProd = Integer.MIN_VALUE;
-        int n = nums.length;
-        for(int i=0;i<n;i++){
-            if(prefix == 0) prefix =1;
-            if(suffix == 0) suffix =1;
-            prefix = prefix * nums[i];
-            suffix = suffix * nums[n-i-1];
+        for(int i=0;i<nums.length;i++){
+            int idx = Math.abs(nums[i]) - 1;
 
-            maxProd = Math.max(maxProd,Math.max(suffix, prefix));
+            if(nums[idx] < 0){
+                ans.add(Math.abs(nums[i]));
+            }
+            else{
+                nums[idx] = -nums[idx];
+            }
         }
-
-        return maxProd;
+        return ans;
     }
 
     public static void main(String[] args) {
-        Question19 q19 = new Question19();
-        int[] nums = {2, 3, -2, 4};
-        System.out.println("Maximum product subarray: " + q19.maxProduct(nums));
+        Question19 q18 = new Question19();
+        int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
+        System.out.println("Duplicates: " + q18.findDuplicates(nums));
     }
 }

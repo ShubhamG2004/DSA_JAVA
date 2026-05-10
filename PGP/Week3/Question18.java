@@ -1,28 +1,30 @@
 package PGP.Week3;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Question18 {
-    public List<Integer> findDuplicates(int[] nums) {
-        List<Integer> ans = new ArrayList<>();
+    public int findDuplicate(int[] nums) {
+        int slow = nums[0];
+        int fast = nums[0];
 
-        for(int i=0;i<nums.length;i++){
-            int idx = Math.abs(nums[i]) - 1;
+        // Step 1: Find intersection point
+        do {
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+        } while (slow != fast);
 
-            if(nums[idx] < 0){
-                ans.add(Math.abs(nums[i]));
-            }
-            else{
-                nums[idx] = -nums[idx];
-            }
+        // Step 2: Find entrance of cycle
+        slow = nums[0];
+
+        while (slow != fast) {
+            slow = nums[slow];
+            fast = nums[fast];
         }
-        return ans;
+
+        return slow;
     }
 
     public static void main(String[] args) {
-        Question18 q18 = new Question18();
-        int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
-        System.out.println("Duplicates: " + q18.findDuplicates(nums));
+        Question18 q17 = new Question18();
+        int[] nums = {1, 3, 4, 2, 2};
+        System.out.println("Duplicate number: " + q17.findDuplicate(nums));
     }
 }
