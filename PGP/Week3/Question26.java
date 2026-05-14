@@ -1,6 +1,6 @@
 package PGP.Week3;
 
-public class Question26 {
+public class Question27 {
     public String reverseWords(String s) {
 
         StringBuilder res = new StringBuilder();
@@ -34,7 +34,7 @@ public class Question26 {
     }
 
     public static void main(String[] args) {
-        Question26 solver = new Question26();
+        Question27 solver = new Question27();
 
         String[] testInputs = {
             "the sky is blue",
