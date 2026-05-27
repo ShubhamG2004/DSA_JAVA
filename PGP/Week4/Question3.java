@@ -1,9 +1,13 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Question3 {
     List<String> result = new ArrayList<>();
 
     public List<String> readBinaryWatch(int turnedOn) {
+
+        // clear previous results
+        result.clear();
 
         // LEDs values
         int[] hours = {8, 4, 2, 1};
@@ -50,5 +54,17 @@ public class Question3 {
         backtrack(ledsLeft, index + 1,
                   hour, minute,
                   hours, minutes);
+    }
+
+    public static void main(String[] args) {
+        Question3 q = new Question3();
+
+        int[] tests = {0, 1, 2, 3};
+        for (int t : tests) {
+            java.util.List<String> out = q.readBinaryWatch(t);
+            System.out.println("turnedOn=" + t + " -> count=" + out.size());
+            for (String s : out) System.out.println(s);
+            System.out.println();
+        }
     }
 }
