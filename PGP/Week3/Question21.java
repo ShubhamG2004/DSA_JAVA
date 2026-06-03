@@ -36,12 +36,18 @@ public class Question21 {
         int[] test3 = {-3, -2, -5, -6};
         int[] test4 = {10};
         int[] test5 = {2, 3, -4};
+        int[] test6 = {1, 2, 3, 4, 5};
+        int[] test7 = {8, -1, 3, 4};
+        int[] test8 = {5, -3, 5};
 
         System.out.println("Test 1: expected 22, got " + solution.maxCircularSum(test1));
         System.out.println("Test 2: expected 12, got " + solution.maxCircularSum(test2));
         System.out.println("Test 3: expected -2, got " + solution.maxCircularSum(test3));
         System.out.println("Test 4: expected 10, got " + solution.maxCircularSum(test4));
         System.out.println("Test 5: expected 5, got " + solution.maxCircularSum(test5));
+        System.out.println("Test 6: expected 15, got " + solution.maxCircularSum(test6));
+        System.out.println("Test 7: expected 15, got " + solution.maxCircularSum(test7));
+        System.out.println("Test 8: expected 10, got " + solution.maxCircularSum(test8));
     }
 
 }
