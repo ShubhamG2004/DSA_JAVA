@@ -42,7 +42,7 @@ class MergeTwoLinkedList{
         list2.next.next = new ListNode(6);
 
         ListNode merged = merger.mergeTwoLists(list1, list2);
-        // print merged list
+       
         while (merged != null) {
             System.out.print(merged.val + (merged.next != null ? " -> " : ""));
             merged = merged.next;
