@@ -3,6 +3,104 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StringCompression",
+      "request": "launch",
+      "mainClass": "StringCompression",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "FindLargestString",
+      "request": "launch",
+      "mainClass": "FindLargestString",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "RemoveDuplicateCharacters",
+      "request": "launch",
+      "mainClass": "RemoveDuplicateCharacters",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "ReverseWordsInSpllit",
+      "request": "launch",
+      "mainClass": "ReverseWordsInSpllit",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "CountVowelsandConstants",
+      "request": "launch",
+      "mainClass": "CountVowelsandConstants",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "TwoSumPr",
+      "request": "launch",
+      "mainClass": "TwoSumPr",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "BubbleSortPr",
+      "request": "launch",
+      "mainClass": "BubbleSortPr",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "BinarySearch",
+      "request": "launch",
+      "mainClass": "ACE.BinarySearch",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "MoveZeros",
+      "request": "launch",
+      "mainClass": "MoveZeros",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "SecondLargest",
+      "request": "launch",
+      "mainClass": "SecondLargest",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "DuplicateElements",
+      "request": "launch",
+      "mainClass": "DuplicateElements",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "CharacterFrequency",
+      "request": "launch",
+      "mainClass": "CharacterFrequency",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "AnagramCheck",
+      "request": "launch",
+      "mainClass": "AnagramCheck",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
+      "name": "PalindromeCheck",
+      "request": "launch",
+      "mainClass": "PalindromeCheck",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "MergeTwoLinkedList",
       "request": "launch",
       "mainClass": "MergeTwoLinkedList",
