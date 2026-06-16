@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ThreadTWoQues",
+      "request": "launch",
+      "mainClass": "ThreadTWoQues",
+      "projectName": "dsa java_1cd05149"
+    },
+    {
+      "type": "java",
       "name": "StringCompression",
       "request": "launch",
       "mainClass": "StringCompression",
