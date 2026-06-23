@@ -1,5 +1,3 @@
-package PGP.Week4;
-
 public class KnightProblem {
     public boolean helper(int[][] grid, int row, int col, int num){
         int rows = grid.length;

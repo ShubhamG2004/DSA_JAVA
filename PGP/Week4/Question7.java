@@ -1,7 +1,6 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
-public class Question6 {
+class Solution {
 
     public List<String> generateParenthesis(int n) {
 
@@ -41,16 +40,35 @@ public class Question6 {
 
     public static void main(String[] args) {
 
-        Question6 obj = new Question6();
+        Solution obj = new Solution();
 
-        int n = 3;
+        // Test Case 1
+        int n1 = 1;
+        System.out.println("n = " + n1);
+        System.out.println(obj.generateParenthesis(n1));
+        System.out.println();
 
-        List<String> result = obj.generateParenthesis(n);
+        // Test Case 2
+        int n2 = 2;
+        System.out.println("n = " + n2);
+        System.out.println(obj.generateParenthesis(n2));
+        System.out.println();
 
-        System.out.println("Valid Parentheses Combinations:");
+        // Test Case 3
+        int n3 = 3;
+        System.out.println("n = " + n3);
+        System.out.println(obj.generateParenthesis(n3));
+        System.out.println();
 
-        for (String str : result) {
-            System.out.println(str);
-        }
+        // Test Case 4
+        int n4 = 4;
+        System.out.println("n = " + n4);
+        System.out.println(obj.generateParenthesis(n4));
+        System.out.println();
+
+        // Test Case 5
+        int n5 = 5;
+        System.out.println("n = " + n5);
+        System.out.println(obj.generateParenthesis(n5));
     }
 }
