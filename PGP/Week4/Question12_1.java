@@ -53,7 +53,6 @@ public class Question12_1 {
         System.out.println("Subsets:");
         System.out.println(obj.subsets(nums3));
 
-        // Test Case 4
         int[] nums4 = {};
         System.out.println("\nInput: []");
         System.out.println("Subsets:");
