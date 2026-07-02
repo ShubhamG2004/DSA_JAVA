@@ -19,7 +19,6 @@ class ListNode {
 
 public class Question8 {
 
-    // Merge K Sorted Lists
     public ListNode mergeKLists(ListNode[] lists) {
 
         if (lists == null || lists.length == 0)
