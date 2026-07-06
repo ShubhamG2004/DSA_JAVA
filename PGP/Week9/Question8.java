@@ -27,7 +27,6 @@ public class Question8 {
         return divide(lists, 0, lists.length - 1);
     }
 
-    // Divide and Conquer
     private ListNode divide(ListNode[] lists, int left, int right) {
 
         if (left == right)
