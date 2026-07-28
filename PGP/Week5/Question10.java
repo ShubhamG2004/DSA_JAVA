@@ -1,49 +1,27 @@
 import java.util.*;
 
-class Solution {
+class Question10 {
 
-    HashMap<Integer, Integer> map = new HashMap<>();
+    public int characterReplacement(String s, int k) {
 
-    public Node constructBinaryTree(int[] pre, int[] preMirror) {
+        int[] freq = new int[26];
+        int left = 0;
+        int maxFreq = 0;
+        int maxWindow = 0;
 
-        for (int i = 0; i < preMirror.length; i++) {
-            map.put(preMirror[i], i);
+        for (int right = 0; right < s.length(); right++) {
+
+            freq[s.charAt(right) - 'A']++;
+            maxFreq = Math.max(maxFreq, freq[s.charAt(right) - 'A']);
+
+            while ((right - left + 1) - maxFreq > k) {
+                freq[s.charAt(left) - 'A']--;
+                left++;
+            }
+
+            maxWindow = Math.max(maxWindow, right - left + 1);
         }
 
-        return build(pre, preMirror, 0, pre.length - 1, 0, preMirror.length - 1);
-    }
-
-    private Node build(int[] pre, int[] preMirror,
-                       int preL, int preR,
-                       int mirL, int mirR) {
-
-        if (preL > preR)
-            return null;
-
-        Node root = new Node(pre[preL]);
-
-        if (preL == preR)
-            return root;
-
-        int leftRoot = pre[preL + 1];
-
-        int idx = map.get(leftRoot);
-
-        int rightSize = idx - mirL;
-        int leftSize = preR - preL - rightSize;
-
-        root.left = build(pre, preMirror,
-                preL + 1,
-                preL + leftSize,
-                idx,
-                mirR);
-
-        root.right = build(pre, preMirror,
-                preL + leftSize + 1,
-                preR,
-                mirL + 1,
-                idx - 1);
-
-        return root;
+        return maxWindow;
     }
 }
