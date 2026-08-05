@@ -1,74 +1,42 @@
-package PGP.Week6;
+import java.util.*;
 
+class Question6 {
 
-public class Question6{ 
+    public static List<Integer> getMax(List<String> operations) {
 
-    int minDiff = Integer.MAX_VALUE;
-    TreeNode prev = null;
+        Stack<Integer> stack = new Stack<>();
+        Stack<Integer> maxStack = new Stack<>();
+        List<Integer> answer = new ArrayList<>();
 
-    static class TreeNode {
-        int val;
-        TreeNode left, right;
-        TreeNode(int val) { this.val = val; }
-    }
+        for (String op : operations) {
 
-    public int getMinimumDifference(TreeNode root) {
-        inorder(root);
-        return minDiff;
-    }
+            String[] parts = op.split(" ");
+            int type = Integer.parseInt(parts[0]);
 
-    private void inorder(TreeNode node) {
-        if (node == null) return;
+            if (type == 1) {
 
-        inorder(node.left);
+                int value = Integer.parseInt(parts[1]);
+                stack.push(value);
 
-        if (prev != null) {
-            minDiff = Math.min(minDiff, node.val - prev.val);
-        }
+                if (maxStack.isEmpty() || value >= maxStack.peek()) {
+                    maxStack.push(value);
+                }
 
-        prev = node;
+            } else if (type == 2) {
 
-        inorder(node.right);
-    }
+                int removed = stack.pop();
 
-    public static void main(String[] args) {
-        Question6 q = new Question6();
-        TreeNode root = new TreeNode(4);
-        root.left = new TreeNode(2);
-        root.right = new TreeNode(6);
-        root.left.left = new TreeNode(1);
-        root.left.right = new TreeNode(3);
+                if (removed == maxStack.peek()) {
+                    maxStack.pop();
+                }
 
-        System.out.println(q.getMinimumDifference(root));
-    }
+            } else {
 
-}
+                answer.add(maxStack.peek());
 
-
-// Brute Force Approach
-/* 
-    public int getMinimumDifference(TreeNode root) {
-        List<Integer> list = new ArrayList<>();
-
-        collect(root, list);
-
-        int minDiff = Integer.MAX_VALUE;
-
-        for (int i = 0; i < list.size(); i++) {
-            for (int j = i + 1; j < list.size(); j++) {
-                minDiff = Math.min(minDiff,
-                                   Math.abs(list.get(i) - list.get(j)));
             }
         }
 
-        return minDiff;
+        return answer;
     }
-
-    private void collect(TreeNode node, List<Integer> list) {
-        if (node == null) return;
-
-        list.add(node.val);
-        collect(node.left, list);
-        collect(node.right, list);
-    }
-*/
+}
