@@ -1,23 +1,58 @@
 class Question5 {
-    public ArrayList<Integer> nextLargerElement(int[] arr) {
 
-        int n = arr.length;
-        ArrayList<Integer> ans = new ArrayList<>(Collections.nCopies(n, -1));
-        Stack<Integer> stack = new Stack<>();
+    public int largestRectangleArea(int[] heights) {
 
-        for (int i = n - 1; i >= 0; i--) {
+        int n = heights.length;
 
-            while (!stack.isEmpty() && stack.peek() <= arr[i]) {
+        int[] left = new int[n];
+        int[] right = new int[n];
+
+        java.util.Stack<Integer> stack = new java.util.Stack<>();
+
+        // Previous Smaller Element
+        for (int i = 0; i < n; i++) {
+
+            while (!stack.isEmpty() && heights[stack.peek()] >= heights[i]) {
                 stack.pop();
             }
 
-            if (!stack.isEmpty()) {
-                ans.set(i, stack.peek());
+            if (stack.isEmpty()) {
+                left[i] = -1;
+            } else {
+                left[i] = stack.peek();
             }
 
-            stack.push(arr[i]);
+            stack.push(i);
         }
 
-        return ans;
+        stack.clear();
+
+        // Next Smaller Element
+        for (int i = n - 1; i >= 0; i--) {
+
+            while (!stack.isEmpty() && heights[stack.peek()] >= heights[i]) {
+                stack.pop();
+            }
+
+            if (stack.isEmpty()) {
+                right[i] = n;
+            } else {
+                right[i] = stack.peek();
+            }
+
+            stack.push(i);
+        }
+
+        int maxArea = 0;
+
+        for (int i = 0; i < n; i++) {
+
+            int width = right[i] - left[i] - 1;
+            int area = heights[i] * width;
+
+            maxArea = Math.max(maxArea, area);
+        }
+
+        return maxArea;
     }
 }
