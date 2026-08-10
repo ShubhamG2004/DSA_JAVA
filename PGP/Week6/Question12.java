@@ -11,38 +11,24 @@ class Question12 {
     }
 
     public void push(int x) {
-        q1.offer(x);
+
+        q2.offer(x);
+
+        while (!q1.isEmpty()) {
+            q2.offer(q1.poll());
+        }
+
+        Queue<Integer> temp = q1;
+        q1 = q2;
+        q2 = temp;
     }
 
     public int pop() {
-
-        while (q1.size() > 1) {
-            q2.offer(q1.poll());
-        }
-
-        int ans = q1.poll();
-
-        Queue<Integer> temp = q1;
-        q1 = q2;
-        q2 = temp;
-
-        return ans;
+        return q1.poll();
     }
 
     public int top() {
-
-        while (q1.size() > 1) {
-            q2.offer(q1.poll());
-        }
-
-        int ans = q1.peek();
-        q2.offer(q1.poll());
-
-        Queue<Integer> temp = q1;
-        q1 = q2;
-        q2 = temp;
-
-        return ans;
+        return q1.peek();
     }
 
     public boolean empty() {
