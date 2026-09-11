@@ -58,6 +58,6 @@ public class MyPriorityQueue {
         minStudentPq.offer(new NewStudent("aman",70));
         minStudentPq.offer(new NewStudent("mohit",90));
         System.out.println(minStudentPq.peek());
-//        System.out.println(minStudentPq.contains(ns));
+       System.out.println(minStudentPq.contains(ns));
     }
 }
