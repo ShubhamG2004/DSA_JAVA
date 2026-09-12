@@ -35,23 +35,23 @@ class NewStudent implements Comparable<NewStudent>{
 }
 public class MyPriorityQueue {
     public static void main(String[] args) {
-//        PriorityQueue<Integer> minPq = new PriorityQueue<>(); //min
-//        minPq.offer(1);
-//        minPq.offer(2);
-//        minPq.offer(10);
-//        minPq.offer(0);
-//        System.out.println("highest priority element-> " + minPq.peek());
+       PriorityQueue<Integer> minPq = new PriorityQueue<>(); //min
+       minPq.offer(1);
+       minPq.offer(2);
+       minPq.offer(10);
+       minPq.offer(0);
+       System.out.println("highest priority element-> " + minPq.peek());
 
-//        PriorityQueue<Integer> maxPq = new PriorityQueue<>(Collections.reverseOrder()); //min
-//        maxPq.offer(1);
-//        maxPq.offer(2);
-//        maxPq.offer(10);
-//        maxPq.offer(0);
-//        System.out.println("max pq : highest priority element-> " + maxPq.peek());
-//        System.out.println(maxPq.contains(10));
-//        System.out.println("max pq : deleted-> " + maxPq.poll());
-//        System.out.println("max pq : highest priority element-> " + maxPq.peek());
-//        System.out.println(maxPq.contains(10));
+       PriorityQueue<Integer> maxPq = new PriorityQueue<>(Collections.reverseOrder()); //min
+       maxPq.offer(1);
+       maxPq.offer(2);
+       maxPq.offer(10);
+       maxPq.offer(0);
+       System.out.println("max pq : highest priority element-> " + maxPq.peek());
+       System.out.println(maxPq.contains(10));
+       System.out.println("max pq : deleted-> " + maxPq.poll());
+       System.out.println("max pq : highest priority element-> " + maxPq.peek());
+       System.out.println(maxPq.contains(10));
 
         PriorityQueue<NewStudent> minStudentPq = new PriorityQueue<>();
         minStudentPq.offer(new NewStudent("shashwat",90));
